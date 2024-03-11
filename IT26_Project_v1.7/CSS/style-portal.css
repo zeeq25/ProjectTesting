@@ -1,0 +1,194 @@
+.container_outer{
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    color: black;
+
+    /*   background-color: #fbe3a7;  */
+    background-color: #fbe3a7;  
+    background-size:100%;
+    background-image: url("../Assets/library-img1.jpg");
+    background-repeat: no-repeat;
+    background-position: contain;
+    
+
+
+
+
+    overflow:hidden;
+    transition: 0.3s;
+}
+
+.container_inner{
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 95%;
+    height: 85%;    
+    color: rgb(213, 203, 203);
+    background-color: rgba(0, 0, 0, 0.6);  
+    overflow:auto;
+
+}
+
+.container_inner-inner{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    top: 0%;
+    bottom: 0%;
+    color: rgb(213, 203, 203);
+    background-color: rgba(0, 0, 0, 0.6);  
+    overflow:auto;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+.user-db-header{
+   color: white;
+}
+
+.container_box{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 180px;
+    top: 0%;
+    bottom: 0%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(7, 7, 7, 0.6);  
+    overflow:auto;
+    
+}
+
+hr {
+    height: 1px;
+    color: white;
+    background-color: white;
+    border: none;
+    
+}
+
+.normal{
+    font-size: small;
+}
+
+.normal.plus{
+    font-size:medium;
+}
+
+/* --------------Sidebar-------------- */
+
+/* sidebar minimize and maximize button */
+.sidebar-icon{
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    position: fixed;
+    font-size: 30px;
+    background-color: #2B3035;
+    color: white;
+    border-radius: 25%;
+}
+
+/* sidebar page button and etc. */
+#sidebar-wrapper{
+    text-align: center;
+    height: 100%px;
+    width: 15%;
+    color: white;
+    background-color: #2B3035;
+    transition: 0.3s;
+
+}
+
+/* Sidebar body */
+.d-flex{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+/* sidebar grouplist /button color */
+.list-group-item{
+    text-align: left;
+    background-color: #2B3035;
+    color: white;;
+}
+
+
+
+
+
+
+
+
+/* This section changes the CSS according to specific screensize */
+
+@media only screen and (min-width:300px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    .container_outer{
+        width: 35%;
+    }
+    #sidebar-wrapper{
+        width: 65%;
+    }
+
+    .container_inner{
+        height: 90%;
+    }
+    
+
+}
+@media only screen and (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .container_outer{
+        width: 80%;
+    }
+    #sidebar-wrapper{
+        width: 20%;
+    }
+
+    .container_inner{
+        height: 92%;
+    }
+}
+
+@media only screen and (min-width:1000px) { /* big landscape tablets, laptops, and desktops */
+    .container_outer{
+        width: 85%;
+    }
+    #sidebar-wrapper{
+        width: 15%;
+        left: -200px;
+    }
+    .container_inner{
+        height: 87%;
+    }
+}
+
+
+
+/* For Javascript*/
+/* SideBar show and hide */
+#sidebar-wrapper.active{
+    width: 0%;
+}
+.container_outer.active{
+    width: 100%;
+}
+
+
+/* ScrollBar Design */
+    
+  /* Add custom scrollbar design */
+  ::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+  }
+
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0 ,0, 0.5); /* Color of the scrollbar handle */
+
+  }

@@ -1,0 +1,23 @@
+
+.div-sign-in{
+    max-width: 500px;
+}
+
+.div-sign-up{
+    max-width: 600px;
+
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.form-horizontal .control-label {
+    text-align: left !important; /* !important added for priority in SO snippet. */
+}
+
+#emailHelp{
+    color: white;
+}
+
+  
