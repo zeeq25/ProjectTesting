@@ -1,0 +1,45 @@
+
+.container_outer{
+
+    margin-left: 0%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    color: black;
+    background-image: url("../Assets/library-img1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+.container_inner{
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 95%;
+    height: 90%;    
+    color: rgb(213, 203, 203);
+
+    overflow:auto;
+
+
+    text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+  overflow:auto;
+
+  
+
+  background-size: 400px;
+  background-image: url("../Assets/Library_Logo.png") ;
+  background-color: rgba(0, 0, 0, 0.6);  
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
